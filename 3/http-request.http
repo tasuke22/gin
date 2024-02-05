@@ -1,0 +1,17 @@
+### IDが1でスコアが2、タイトルが"test"のサンプルリクエスト
+POST http://localhost:8080/sample/1?score=2
+Content-Type: application/json
+
+{
+  "title": "test"
+}
+
+###
+
+### IDが無効（"aaa"）でスコアが2、タイトルが"test"のサンプルリクエスト
+POST http://localhost:8080/sample/aaa?score=2
+Content-Type: application/json
+
+{
+  "title": "test"
+}

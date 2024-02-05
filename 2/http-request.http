@@ -1,0 +1,5 @@
+### ベンチマークエンドポイントへのリクエスト
+GET http://localhost:8080/benchmark
+
+### 認証が必要なエンドポイントへのリクエスト
+GET http://localhost:8080/auth/me

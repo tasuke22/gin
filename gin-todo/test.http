@@ -1,0 +1,26 @@
+### GETリクエスト: すべてのtodosを取得
+GET http://localhost:8080/api/todos
+
+### GETリクエスト: IDが1のtodoを取得
+GET http://localhost:8080/api/todos/5
+
+### POSTリクエスト: 新しいtodoを作成
+POST http://localhost:8080/api/todos
+Content-Type: application/json
+
+{
+  "name": "test",
+  "done": false
+}
+
+### PATCHリクエスト: IDが1のtodoを更新
+PATCH http://localhost:8080/api/todos/1
+Content-Type: application/json
+
+{
+  "name": "changed",
+  "done": true
+}
+
+### DELETEリクエスト: IDが1のtodoを削除
+DELETE http://localhost:8080/api/todos/9

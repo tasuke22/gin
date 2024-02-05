@@ -1,0 +1,17 @@
+### サーバーにpingを送る
+GET http://localhost:8080/ping
+
+### 'foo'のユーザー情報を取得
+GET http://localhost:8080/user/foo
+
+### 'foo'として認証し、/adminに値をPOSTする
+POST http://localhost:8080/admin
+Authorization: Basic Zm9vOmJhcg==
+Content-Type: application/json
+
+{
+  "value": "test"
+}
+
+### 更新された値を確認するために、再び'foo'のユーザー情報を取得
+GET http://localhost:8080/user/foo
